@@ -6,9 +6,9 @@ Block Unicode domains (BUd)
 
 
 # Features
-* <img alt="BUd status - On" height="16px" width="16px" src="icons/BUd_start.png"> This add-on protects against malware sites that spoof domain names in Unicode. (See 'test.html' for an example.)
-* <img alt="BUd status - Block" height="16px" width="16px" src="icons/BUd_block.png"> All URLs described in Unicode are blocked.
-* <img alt="BUd status - Off" height="16px" width="16px" src="icons/BUd_off.png"> Clicking the icon suspends the block for one minute.
+* This add-on protects against malware sites that spoof domain names in Unicode. (See 'test.html' for an example.)
+* <img alt="status - Block" height="16px" width="16px" src="icons/BUd_block.png"> Unicode domain name URL was blocked.
+* <img alt="status - Off" height="16px" width="16px" src="icons/BUd_off.png"> Clicking the icon suspends the block for one minute.
 
 
 # Requirement
