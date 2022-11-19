@@ -7,7 +7,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(r) {
     try{
       ext_url = r.url
       if (!ext_url.match(/xn\-\-/)) return;
-      /* Modified from https://github.com/mathiasbynens/punycode.js */
+      /* from https://github.com/mathiasbynens/punycode.js */
       import('./punycode_mod.js')
         .then(module => {
           const ret = module.default.puni2uni(ext_url);
