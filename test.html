@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>These links are for testing Block Unicode domains (BUd).</h1>
+		<h3>To test after taking the device <em>offline</em> so that it does not jump<br> if accidentally clicked with BUd turned off.</h3>
+		<hr>
+		<h3>
+		<dl>
+		<dt>Test 1: Do not block non-Unicode domains.</dt>
+			<dd>
+				<ul>
+					<li><a href="https://www.mozilla.org/en-US/" class=""btn">https://www.mozilla.org/en-US/</a></li>
+				</ul>
+			</dd>
+		<br><br>
+		<dt>Test 2: Domains whose names are all Unicode are blocked.</dt>
+			<dd>
+				<ul>'с' is U+0441, 'о' is U+043E, 'р' is U+0440  (These are Cyrillic character)
+					<li><a href="https://www.соор.or.jp/" class=""btn">https://www.соор.or.jp/</a></li>
+				</ul>
+			</dd>
+		<br><br>
+		<dt>Test 3: Domains whose names are partially in Unicode are blocked.</dt>
+			<dd>
+				<ul>
+					<li>
+						'а' is U+0430  (It is Cyrillic character)<br>
+						<a href="https://www.amаzon.co.jp/gp/goldbox?ref_=nav_cs_gb" class=""btn">https://www.amаzon.co.jp/gp/goldbox?ref_=nav_cs_gb</a>
+					</li>
+				</ul>
+			</dd>
+		<br><br>
+		<dt>Test 4: Non-Unicode domain URL in popups are blocked.</dt>
+			<dd>
+				<ul>
+					<li>
+						'о' is U+043E  (It is Cyrillic character)<br>
+						Click to open modal dialog. →
+						 <button id="openModal" class="button">https://www.mоzilla.org/</button>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+
+	</h3>
+
+	<div id="modalDemo" class="modal">
+	  <div class="modal-content">
+		<div class="modal-header" height="16px">
+		 <span class="closeModal">⌧</span> Spoofing URL Demo
+		</div>
+		<hr>
+		<div class="modal-body">
+		  <button id="btnLink" class="button" backgroundColor = "rgba(0,0,0,255)" text-decoration="underline">https://www.mоzilla.org/</button>
+		</div>
+	  </div>
+	</div>
+  
+	</body>
+</html>
+
+<script>
+const btnOpen = document.getElementById('openModal');
+const btnClose = document.getElementsByClassName('closeModal')[0];
+const modal = document.getElementById('modalDemo');
+const style = modal.style;
+style.display = "none";
+style.position = "relative";
+style.overflow = "auto";
+style.width  = "400px";
+style.backgroundColor = "rgba(200,200,200,10)";
+style.border = "3px #666 solid";
+style.borderRadius = "5px";
+style.boxShadow = "3px 5px 10px #333";
+
+btnOpen.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+btnClose.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+btnLink.addEventListener('click', () => {
+  modal.style.display = 'none';
+  open("https://www.mоzilla.org/");
+});
+
+
+// modal.style.display = 'none';
+</script>

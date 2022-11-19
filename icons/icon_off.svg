@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="レイヤー-3">
+<path d="M310.375 30.0625C290.292 30.0625 274 50.9097 274 76.625L274 291.219L231.188 390.188L231.188 205.906C231.188 175.62 207.082 151.063 177.344 151.062L81.4062 151.062C51.6678 151.062 27.5625 175.62 27.5625 205.906L27.5625 564.375C24.8727 587.06 27.5803 611.32 36.7812 635.562L91.0625 778.562C114.677 840.781 173.336 884.39 235.781 892.531C240.03 893.705 244.409 894.531 249.031 894.531L325.938 894.531L325.938 974.906C325.938 992.156 347.248 1006.12 373.562 1006.12L845.688 1006.12C872.002 1006.12 893.344 992.156 893.344 974.906L893.344 891.688C950.755 880.398 994.406 824.441 994.406 756.969L994.406 387.438C994.987 383.8 995.375 380.061 995.375 376.156L995.375 78.5938C995.375 51.7792 980.855 30.0625 962.969 30.0625L882.062 30.0625C864.176 30.0625 849.688 51.7792 849.688 78.5938L849.688 238L827.219 238C828.778 234.904 829.75 231.578 829.75 228.062L829.75 57.8125C829.75 42.4713 813.458 30.0625 793.375 30.0625L702.531 30.0625C682.448 30.0625 666.156 42.4713 666.156 57.8125L666.156 228.062C666.156 231.578 667.128 234.904 668.688 238L637.031 238C638.591 234.904 639.531 231.578 639.531 228.062L639.531 57.8125C639.531 42.4713 623.271 30.0625 603.188 30.0625L512.312 30.0625C492.229 30.0625 475.969 42.4713 475.969 57.8125L475.969 228.062C475.969 231.578 476.909 234.904 478.469 238L437.594 238L437.594 76.625C437.594 50.9097 421.302 30.0625 401.219 30.0625L310.375 30.0625Z" fill="#0072ff" fill-rule="nonzero" opacity="1" stroke="#303030" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M898.496 558.938C898.496 657.35 767.09 737.129 604.993 737.129C442.897 737.129 311.491 657.35 311.491 558.938" fill="none" opacity="1" stroke="#303030" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M858.507 642.824L937.074 723.011" fill="none" opacity="1" stroke="#303030" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M605.372 735.729L601.465 834.066" fill="none" opacity="1" stroke="#303030" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M737.201 717.636L792.686 817.057" fill="none" opacity="1" stroke="#303030" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M457.674 710.823L418.95 816.483" fill="none" opacity="1" stroke="#303030" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+<path d="M352.524 646.804L269.334 710.982" fill="none" opacity="1" stroke="#303030" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10"/>
+</g>
+</svg>
