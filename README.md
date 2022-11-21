@@ -14,9 +14,10 @@ Block Unicode domains (BUd)
 # Requirement
 * Newest chrome-based browser.
 ## List of browsers I tested to work
-* mozilla Firefox:  107.0
-* Google Chrome:    107.0.5304.110
-* Microsoft Edge:   107.0.1418.35
+* mozilla Firefox:      107.0   (On MacOS 13.0.1)
+* mozilla Firefox Beta: 108.0b3 (On Android 12)
+* Google Chrome:        107.0.5304.110 (On Windows10 22H2)
+* Microsoft Edge:       107.0.1418.35  (On Windows10 22H2)
 
 
 # Installation
@@ -35,8 +36,12 @@ Block Unicode domains (BUd)
 5. click extension icon and pin 'BUd' addon
 
 
+# History
+* v1.0.1: Stricter authority to use. Support for Firefox Beta for Android.
+* v1.0  : Initial version.
+
+
 # ToDo
-* Support for Firefox for Android.
 * Support for Manifest V3.
 
 
@@ -47,7 +52,7 @@ Block Unicode domains (BUd)
 # Author
 * Catshelf
 * Programmer
-* catshelf@twitter
+* https://github.com/catshelf/BUd
 
 
 # License

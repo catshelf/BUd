@@ -1,10 +1,12 @@
 {
 "manifest_version": 2,
-"name": "Block Unicode domains (BUd)",
-"version": "1.0",
-"description": "To protect users from URL spoofing, issue a warning if the domain string is Unicode.",
+"name": "Block Unicode domains",
+"short_name": "BUd",
+"version": "1.0.1",
+"description": "To protect users from URL spoofing, block if the domain string is Unicode.",
+"homepage_url": "https://github.com/catshelf/BUd",
 "icons": {"48": "icons/icon.png"},
-"permissions": ["<all_urls>","webRequest","webRequestBlocking","tabs","notifications","alarms"],
-"browser_action": { "default_icon": "icons/icon_on.svg", "default_title": "Block Unicode domains: *On*"},
+"permissions": ["*://*/*","webRequest","webRequestBlocking","alarms"],
+"browser_action": {"default_icon": "icons/icon_on.svg", "default_title": "BUd: *On*"},
 "background": {"scripts": ["background.js"], "persistent": true}
 }

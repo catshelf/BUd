@@ -1,4 +1,4 @@
-var ext_name = "Block Unicode domains:";
+var ext_name = "BUd:";
 var ext_state = true;
 var ext_badge = "";
 var ext_delay = 1;
@@ -14,12 +14,6 @@ chrome.webRequest.onBeforeRequest.addListener(function(r) {
           if (ext_state){
             ext_badge = "BLK!";
             chrome.alarms.create("BLOCK", {delayInMinutes: 0.05});
-            mr = ret.match(/^[\w]+:\/\/[^\/]+/);
-            chrome.notifications.create(ext_name,{
-              "type": "basic",
-              "title": `${ext_name} Block!`,
-              "message": (mr) ? mr[0] : ret
-            });
             console.log(`${ext_name} Blocked ${ret}`);
           } else {
             console.log(`${ext_name} Warn! ${ret}`);
@@ -37,7 +31,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(r) {
     }
     return { cancel: false };
   },
-  {urls:["<all_urls>"]},
+  {urls:["*://*/*"]},
   ["blocking"]
 );
 
@@ -75,7 +69,7 @@ function setOnOff() {
     });
     chrome.browserAction.setTitle({
       // Screen readers can see the title
-      title: ext_state ? `${ext_name} *On*` : `${ext_name} Off`
+      title: (ext_badge.length > 0) ? `${ext_name} ${ext_badge}` : ext_state ? `${ext_name} *On*` : `${ext_name} Off`
     }); 
   } catch (err) {
     console.log(`${ext_name} ${err}`);
